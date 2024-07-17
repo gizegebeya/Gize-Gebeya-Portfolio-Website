@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gize Gebeya</title>
-   
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -77,9 +78,57 @@
             padding: 20px;
             text-align: center;
         }
+
+        .social-media a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            background-color: #333;
+        }
+
+        .social-media img, .contact-us img {
+            width: 80px;
+            height: 80px;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
+        .contact-us a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            background-color: #333;
+        }
+
+        .box {
+            width: 500px;
+            height: auto;
+            background-color: #333;
+            border: 2px solid #333;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            display: flex;
+            justify-content: left;
+            align-items: left;
+            font-size: 24px;
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+        }
+
+        .qr-codes-other-websites img {
+            width: 200px;
+            height: 250px;
+            margin: 0 10px;
+        }
+
+        .qr-codes-footer img {
+            width: 200px;
+            height: 250px;
+            margin: 0 10px;
+            margin-left: 1000px ;
+        }
     </style>
-      <!-- Add the favicon link here -->
-      <link rel="icon" type="image/png" href="favicon.jpeg">
+    <link rel="icon" type="image/png" href="favicon.jpeg">
 </head>
 <body>
     <header>
@@ -93,8 +142,8 @@
         <ul>
             <li><a href="#about">About Us</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#Other Website's">Other Website's</a></li>
-            <li><a href="#Help">Help</a></li>
+            <li><a href="#other-websites">Other Websites</a></li>
+            <li><a href="#help">Help</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
@@ -107,36 +156,33 @@
             <br>
             Yenus Hashim
         </div>
-         <!--<div class="founder">
-            <img src="founder2.jpg" alt="Founder Natan Tesfaye">
-            <br>
-            Founder
-            <br>
-            Natan Tesfaye
-        </div>-->
     </section>
 
     <section id="about">
         <h2>About Us</h2>
         <p>Welcome to Gize Gebeya Portfolio Website, your trusted house and car brokerage. We offer efficient, legitimate, and secure services. With our expertise, we save you time and effort in buying or selling properties and vehicles. Trust us to ensure authenticity, transparency, and data security. Our market knowledge enables us to negotiate the best deals for you. Customer satisfaction is our priority, and we strive to build long-term relationships. Choose Gize Gebeya for your real estate and automotive needs. Contact us today.</p>
     </section>
-    <section id="Other Website's">
+
+    <section class="box" id="other-websites">
         <h2>Other Websites</h2>
-        <div class="qr-codes">
-            <h3>Portfolio Website</h3>
+        <div class="qr-codes-other-websites">
             <a href="https://gizegebeya.github.io/Gize-Gebeya-Portfolio-Website/">
-                <img src="PORTFOLIO QR CODE.png" alt="QR Code 1" width="200" height="200">
+                <img src="PORTFOLIO QR CODE.png" alt="QR Code 1">
             </a>
-            <h3>Website for Customers</h3>
+            <h3>1 ↑ Portfolio Website</h3>
+            
             <a href="https://gizegebeya.github.io/Gize-Gebeya-Customer-s-website/">
-                <img src="QR CODE FOR CUSTOMERS.png" alt="QR Code 2" width="200" height="200">
+                <img src="QR CODE FOR CUSTOMERS.png" alt="QR Code 2">
             </a>
-            <h3>Website for Employees</h3>
+            <h3>2 ↑ Website for Customers</h3>
+            
             <a href="https://gizegebeya.github.io/Gize-Gebeya-Employee-s-Website/">
-                <img src="QR CODE FOR EMPLOYEES.png" alt="QR Code 3" width="200" height="200">
+                <img src="QR CODE FOR EMPLOYEES.png" alt="QR Code 3">
             </a>
+            <h3>3 ↑ Website for Employees</h3>
         </div>
     </section>
+
     <section id="projects">
         <h2>Projects</h2>
         <ul>
@@ -149,36 +195,40 @@
                 <p>Car Sales.</p>
             </li>
         </ul>
-        <section id="Help">
-            <h2>Help</h2>
-    <ul>
-        <li>If you are a Buyer Click the Website for Customer's Website "QR CODE" OR Click</li>
-            <div class="social-media">
-            <a href="#" class="social-icon">YouTube</a>
-            <a href="https://www.tiktok.com/@gize.gebeya0?_t=8nsX7AxzoIP&_r=1" class="social-icon">Tiktok</a>
-            <a href="#" class="social-icon">Twitter</a>
-            <a href="https://www.instagram.com/gizegebeya?igsh=bnVqdHNseXdqNDg=" class="social-icon">Instagram</a>
-            <a href="https://www.facebook.com/profile.php?id=61550732175981" class="social-icon">Facebook</a>
-            <a href="https://t.me/gizegebeyasale" class="social-icon">Telegram</a>
-        </div>
-        <li>If you are a Seller Contact us using the information provided in the "CONTACT US" section
-        </li>
-        <li>If you want to be hired contact us using the information provided in the "CONTACT US" section</li>
-    </ul>
-        </section>
     </section>
+
+    <section id="help">
+        <h2>Help</h2>
+        <ul>
+            <li>If you are a Buyer, click the Website for Customers' QR Code or click:</li>
+            <div class="social-media">
+                <a href="#" class="social-icon"><img src="Youtube.png" alt="YouTube"></a>
+                <a href="https://www.tiktok.com/@gize.gebeya0?_t=8nsX7AxzoIP&_r=1" class="social-icon"><img src="TIKTOK.png" alt="TIKTOK"></a>
+                <a href="#" class="social-icon"><img src="X.jpg" alt="X"></a>
+                <a href="https://www.instagram.com/gizegebeya?igsh=bnVqdHNseXdqNDg=" class="social-icon"><img src="INSTAGRAM.jpg" alt="INSTAGRAM"></a>
+                <a href="https://www.facebook.com/profile.php?id=61550732175981" class="social-icon"><img src="FACEBOOK.png" alt="FACEBOOK"></a>
+                <a href="https://t.me/gizegebeyasale" class="social-icon"><img src="Telegram channel.jpg" alt="TELEGRAM SALES"></a>
+            </div>
+            <li>If you are a Seller, contact us using the information provided in the "Contact Us" section.</li>
+            <li>If you want to be hired, contact us using the information provided in the "Contact Us" section.</li>
+        </ul>
+    </section>
+
     <section id="contact">
         <h2>Contact Us</h2>
         <p>Email: GizeGebeyaCompany@gmail.com</p>
         <p>Phone: 0978906766 / 0973126041</p>
         <div class="social-media">
-            <a href="gizegebeyacompany@gmail.com" class="social-icon">Email</a>
-            <a href="https://t.me/gizegebeyacompany" class="social-icon">Telegram</a>
-          </div>
+            <a href="mailto:gizegebeyacompany@gmail.com" class="social-icon"><img src="GMAIL.png" alt="GMAIL"></a>
+            <a href="https://t.me/gizegebeyacompany" class="social-icon"><img src="Telegram.jpg" alt="TELEGRAM"></a>
+        </div>
     </section>
 
     <footer>
         <p>&copy; 2023 Gize Gebeya. All rights reserved.</p>
+        <div class="qr-codes-footer">
+            <img src="PORTFOLIO QR CODE.png" alt="Portfolio QR Code">
+        </div>
     </footer>
 </body>
 </html>
