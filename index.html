@@ -18,30 +18,42 @@
             text-align: center;
         }
 
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            top: 20px;
+            left: 20px;
+            margin-bottom: 20px;
+        }
+
         .logo img {
             height: auto;
-            max-width: 100%;
+            max-width: 50px;
             border-radius: 50%;
+            margin-right: 10px;
         }
 
         h1 {
             margin: 0;
+            font-size: 2rem;
         }
 
         nav {
             background-color: #f4f4f4;
             padding: 10px;
+            text-align: center;
         }
 
         nav ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
-            text-align: center;
+            display: flex;
+            justify-content: center;
         }
 
         nav ul li {
-            display: inline;
             margin-right: 10px;
         }
 
@@ -53,6 +65,7 @@
 
         section {
             padding: 20px;
+            text-align: center;
         }
 
         .founders {
@@ -72,67 +85,119 @@
             border-radius: 50%;
         }
 
+        .box {
+            width: 80%;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #333;
+            border: 2px solid #333;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            padding: 20px;
+            color: #fff;
+            font-size: 1.2rem;
+            text-align: left;
+        }
+
+        .box h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .box h3 {
+            font-size: 1.2rem;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+
+        .box img {
+            width: 100%;
+            max-width: 200px;
+            margin-bottom: 10px;
+        }
+
+        .qr-codes-other-websites {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .qr-codes-other-websites a {
+            text-decoration: none;
+            color: #fff;
+            text-align: center;
+        }
+
+        .qr-codes-other-websites h3 {
+            margin: 5px 0;
+            font-size: 1rem;
+        }
+
+        .qr-codes-footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .qr-codes-footer img {
+            width: 200px;
+            height: auto;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
         footer {
             background-color: #333;
             color: #fff;
             padding: 20px;
             text-align: center;
+            margin-top: 20px;
+        }
+
+        .social-media {
+            margin-top: 10px;
         }
 
         .social-media a {
             color: #fff;
             text-decoration: none;
             margin: 0 10px;
-            background-color: #333;
+            display: inline-block;
             border-radius: 50%;
         }
 
-        .social-media img, .contact-us img {
-            width: 50px;
-            height: 50px;
+        .social-media img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
             vertical-align: middle;
-            border-radius: 50%;
+            margin-right: 5px;
         }
 
-        .contact-us a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 10px;
-            background-color: #333;
-        }
-
-        .box {
-            width: 100%;
-            max-width: 600px;
-            background-color: #333;
-            border: 2px solid #333;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            font-size: 18px;
-            font-weight: bold;
-            color: rgb(255, 255, 255);
-            margin: auto;
-            padding: 20px;
-        }
-
-        .qr-codes-other-websites img, .qr-codes-footer img {
-            width: 100%;
-            max-width: 300px;
-            height: auto;
-            margin: 10px 0;
-        }
-
-        /* Media Queries */
-        @media screen and (min-width: 768px) {
-            .logo img {
-                max-width: 10%;
-                margin-right: 60%;
+        @media (max-width: 768px) {
+            .logo {
+                margin-bottom: 10px;
             }
+
             .box {
-                font-size: 24px;
+                width: 90%;
+                font-size: 1rem;
+            }
+
+            .qr-codes-other-websites img {
+                width: 150px;
+                height: auto;
+                margin: 5px;
+            }
+
+            .qr-codes-footer img {
+                width: 150px;
+                height: auto;
+                margin: 10px;
             }
         }
-
     </style>
     <link rel="icon" type="image/png" href="favicon.jpeg">
 </head>
@@ -165,8 +230,10 @@
     </section>
 
     <section id="about">
-        <h2>About Us</h2>
-        <p>Welcome to Gize Gebeya Portfolio Website, your trusted house and car brokerage. We offer efficient, legitimate, and secure services. With our expertise, we save you time and effort in buying or selling properties and vehicles. Trust us to ensure authenticity, transparency, and data security. Our market knowledge enables us to negotiate the best deals for you. Customer satisfaction is our priority, and we strive to build long-term relationships. Choose Gize Gebeya for your real estate and automotive needs. Contact us today.</p>
+        <div class="box">
+            <h2>About Us</h2>
+            <p>Welcome to Gize Gebeya Portfolio Website, your trusted house and car brokerage. We offer efficient, legitimate, and secure services. With our expertise, we save you time and effort in buying or selling properties and vehicles. Trust us to ensure authenticity, transparency, and data security. Our market knowledge enables us to negotiate the best deals for you. Customer satisfaction is our priority, and we strive to build long-term relationships. Choose Gize Gebeya for your real estate and automotive needs. Contact us today.</p>
+        </div>
     </section>
 
     <section class="box" id="other-websites">
@@ -174,27 +241,25 @@
         <div class="qr-codes-other-websites">
             <a href="https://gizegebeya.github.io/Gize-Gebeya-Portfolio-Website/">
                 <img src="PORTFOLIO QR CODE.png" alt="QR Code 1">
+                <h3>Portfolio Website</h3>
             </a>
-            <h3>1 ↑ Portfolio Website</h3>
-            
             <a href="https://gizegebeya.github.io/Gize-Gebeya-Customer-s-website/">
                 <img src="QR CODE FOR CUSTOMERS.png" alt="QR Code 2">
+                <h3>Website for Customers</h3>
             </a>
-            <h3>2 ↑ Website for Customers</h3>
-            
             <a href="https://gizegebeya.github.io/Gize-Gebeya-Employee-s-Website/">
                 <img src="QR CODE FOR EMPLOYEES.png" alt="QR Code 3">
+                <h3>Website for Employees</h3>
             </a>
-            <h3>3 ↑ Website for Employees</h3>
         </div>
     </section>
 
-    <section id="projects">
+    <section id="projects" class="box">
         <h2>Projects</h2>
         <ul>
             <li>
                 <h3>Project 1</h3>
-                <p>Houses and land Sales.</p>
+                <p>Houses and Land Sales.</p>
             </li>
             <li>
                 <h3>Project 2</h3>
@@ -203,26 +268,25 @@
         </ul>
     </section>
 
-    <section id="help">
+    <section id="help" class="box">
         <h2>Help</h2>
         <ul>
-            <li>If you are a Buyer, click the Website for Customers' QR Code or click:</li>
-            <div class="social-media">
-                <a href="#" class="social-icon"><img src="Youtube.png" alt="YouTube"></a>
-                <a href="https://www.tiktok.com/@gizegebeyasales?_r=1" class="social-icon"><img src="TIKTOK.png" alt="TIKTOK"></a>
-                <a href="#" class="social-icon"><img src="X.jpg" alt="X"></a>
-                <a href="https://www.instagram.com/gizegebeya?igsh=bnVqdHNseXdqNDg=" class="social-icon"><img src="INSTAGRAM.jpg" alt="INSTAGRAM"></a>
-                <a href="https://www.facebook.com/profile.php?id=61550732175981" class="social-icon"><img src="FACEBOOK.png" alt="FACEBOOK"></a>
-                <a href="https://t.me/gizegebeyasale" class="social-icon"><img src="Telegram channel.jpg" alt="TELEGRAM SALES"></a>
-            </div>
-            <li>If you are a Seller, contact us using the information provided in the "Contact Us" section.</li>
-            <li>If you want to be hired, contact us using the information provided in the "Contact Us" section.</li>
+            <li>If you are a Buyer, click the "Website for Customers" QR Code or visit the link.</li>
+            <li>If you are a Seller or looking to be hired, please contact us through the information provided in the "Contact Us" section.</li>
         </ul>
+        <div class="social-media">
+            <a href="#" class="social-icon"><img src="Youtube.png" alt="YouTube"></a>
+            <a href="https://www.tiktok.com/@gizegebeyasales?_r=1" class="social-icon"><img src="TIKTOK.png" alt="TIKTOK"></a>
+            <a href="#" class="social-icon"><img src="X.jpg" alt="X"></a>
+            <a href="https://www.instagram.com/gizegebeya?igsh=bnVqdHNseXdqNDg=" class="social-icon"><img src="INSTAGRAM.jpg" alt="INSTAGRAM"></a>
+            <a href="https://www.facebook.com/profile.php?id=61550732175981" class="social-icon"><img src="FACEBOOK.png" alt="FACEBOOK"></a>
+            <a href="https://t.me/gizegebeyasale" class="social-icon"><img src="Telegram channel.jpg" alt="TELEGRAM SALES"></a>
+        </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="box">
         <h2>Contact Us</h2>
-        <p>Email: GizeGebeyaCompany@gmail.com</p>
+        <p>Email: gizegebeyacompany@gmail.com</p>
         <p>Phone: 0978906766 / 0973126041</p>
         <div class="social-media">
             <a href="mailto:gizegebeyacompany@gmail.com" class="social-icon"><img src="GMAIL.png" alt="GMAIL"></a>
@@ -231,7 +295,7 @@
     </section>
 
     <footer>
-        <p>&copy; 2023 Gize Gebeya. All rights reserved.</p>
+        <p>&copy; 2024 Gize Gebeya. All rights reserved.</p>
         <div class="qr-codes-footer">
             <img src="PORTFOLIO QR CODE.png" alt="Portfolio QR Code">
         </div>
