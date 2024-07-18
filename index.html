@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gize Gebeya</title>
     <style>
-        /* General Styles */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -19,40 +18,30 @@
             text-align: center;
         }
 
-       .logo {
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      position: absolute;
-      top: 20px;
-      left: 20px;
-    }
-
-    .logo img {
-      height: auto;
-      max-width: 50px;
-      border-radius: 50%;
-      margin-right: 10px;
-    }
+        .logo img {
+            height: auto;
+            max-width: 100%;
+            border-radius: 50%;
+        }
 
         h1 {
-            margin: 10px 0 0; /* Adjust top margin */
+            margin: 0;
         }
 
         nav {
             background-color: #f4f4f4;
             padding: 10px;
-             text-align: flex;
         }
 
         nav ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
+            text-align: center;
         }
 
         nav ul li {
-            display: inline-block; /* Changed to inline-block for better spacing */
+            display: inline;
             margin-right: 10px;
         }
 
@@ -60,77 +49,27 @@
             color: #333;
             text-decoration: none;
             padding: 5px;
-            display: inline-block; /* Adjust padding and make it inline */
         }
 
         section {
             padding: 20px;
-            text-align: center;
         }
 
         .founders {
             display: flex;
             justify-content: center;
-            flex-wrap: wrap; /* Ensure founders wrap on smaller screens */
-            gap: 20px; /* Space between founders */
+            margin-bottom: 20px;
         }
 
         .founder {
             text-align: center;
-            margin-bottom: 20px; /* Adjust spacing */
+            margin-right: 20px;
         }
 
         .founder img {
             width: 100%;
             max-width: 200px;
-            height: auto;
             border-radius: 50%;
-        }
-
-        .box {
-            max-width: 100%; /* Ensure box adjusts to container */
-            background-color: #333;
-            border: 2px solid #333;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            display: flex;
-            flex-direction: column; /* Ensure content stacks vertically */
-            align-items: center; /* Center items horizontally */
-            padding: 20px;
-            color: #fff;
-        }
-
-        .qr-codes-other-websites img {
-            width: 100%;
-            max-width: 200px;
-            height: auto;
-            margin-bottom: 10px; /* Adjust spacing */
-        }
-
-        .qr-codes-footer {
-            text-align: center;
-            margin-top: 20px; /* Adjust spacing */
-        }
-
-        .social-media {
-            margin-top: 10px; /* Adjust spacing */
-        }
-
-        .social-media a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 10px;
-            background-color: #333;
-            border-radius: 50%;
-            display: inline-block; /* Adjust padding and make it inline */
-            padding: 10px;
-        }
-
-        .social-media img {
-            width: 40px; /* Adjust size of social icons */
-            height: 40px;
-            border-radius: 50%;
-            margin-right: 5px;
         }
 
         footer {
@@ -140,26 +79,60 @@
             text-align: center;
         }
 
-        @media (max-width: 768px) {
+        .social-media a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            background-color: #333;
+            border-radius: 50%;
+        }
+
+        .social-media img, .contact-us img {
+            width: 50px;
+            height: 50px;
+            vertical-align: middle;
+            border-radius: 50%;
+        }
+
+        .contact-us a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            background-color: #333;
+        }
+
+        .box {
+            width: 100%;
+            max-width: 600px;
+            background-color: #333;
+            border: 2px solid #333;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            font-size: 18px;
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+            margin: auto;
+            padding: 20px;
+        }
+
+        .qr-codes-other-websites img, .qr-codes-footer img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            margin: 10px 0;
+        }
+
+        /* Media Queries */
+        @media screen and (min-width: 768px) {
             .logo img {
-                max-width: 40%; /* Adjust logo size for smaller screens */
+                max-width: 10%;
+                margin-right: 60%;
             }
-
-            .founders {
-                flex-direction: column; /* Stack founders vertically */
-                align-items: center; /* Center founders */
-            }
-
             .box {
-                width: 90%; /* Adjust box width */
-            }
-
-            .qr-codes-footer img {
-                width: 150px; /* Adjust size of QR codes */
-                height: auto;
-                margin: 10px;
+                font-size: 24px;
             }
         }
+
     </style>
     <link rel="icon" type="image/png" href="favicon.jpeg">
 </head>
@@ -252,4 +225,16 @@
         <p>Email: GizeGebeyaCompany@gmail.com</p>
         <p>Phone: 0978906766 / 0973126041</p>
         <div class="social-media">
-            <a href="mailto:gizegebeyacompany@gmail.com" class="social-icon"><img src="GMAIL.png" alt
+            <a href="mailto:gizegebeyacompany@gmail.com" class="social-icon"><img src="GMAIL.png" alt="GMAIL"></a>
+            <a href="https://t.me/gizegebeyacompany" class="social-icon"><img src="Telegram.jpg" alt="TELEGRAM"></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Gize Gebeya. All rights reserved.</p>
+        <div class="qr-codes-footer">
+            <img src="PORTFOLIO QR CODE.png" alt="Portfolio QR Code">
+        </div>
+    </footer>
+</body>
+</html>
